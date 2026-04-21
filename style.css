@@ -1,0 +1,97 @@
+/* 1. Global Reset & Font */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Center everything on the screen */
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Takes up the full screen height */
+    margin: 0;
+    color: #333;
+}
+
+/* 3. General Div Spacing */
+div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 4. Stats Display (Timer and Score) */
+#timer-display, #score-display {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 1.4rem;
+}
+
+#timer-display {
+    color: #e74c3c; /* Red color for the timer to create urgency */
+    font-weight: bold;
+}
+
+/* 5. The Math Question */
+#question-display {
+    font-size: 4rem; /* Massive text for quick reading */
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+/* 6. The Input Box */
+#answer-input {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    border: 3px solid #bdc3c7;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Change border color when typing */
+#answer-input:focus {
+    border-color: #3498db;
+}
+
+/* Hide the default up/down arrows in the number input */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+/* 7. Dropdown and Button Controls */
+#math-type, #start-btn {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    outline: none;
+}
+
+#start-btn {
+    background-color: #2ecc71; /* Green start button */
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the start button */
+#start-btn:hover:not(:disabled) {
+    background-color: #27ae60;
+}
+
+/* Greyed out state when the button is disabled */
+#start-btn:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}

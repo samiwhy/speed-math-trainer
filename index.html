@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Math Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Speed Math Trainer</h1>
+ 
+  
+    <div>
+        <h3 id="streak-display">🔥 Streak: 0 Days</h3>
+        <h3 id="highscore-display">🏆 High Score: 0</h3>
+    </div>
+    
+    <div>
+        <h3 id="timer-display">Time: 60s</h3>
+        <h3 id="score-display">Score: 0</h3>
+    </div>
+
+    
+    <div>
+        <h3 id="timer-display">Time: 60s</h3>
+        <h3 id="score-display">Score: 0</h3>
+    </div>
+
+    <div>
+        <h2 id="question-display">Press Start to Begin!</h2>
+        <input type="number" id="answer-input" placeholder="Type answer..." disabled>
+    </div>
+
+    <br>
+    
+    <select id="math-type">
+        <option value="addition">Addition (10-99)</option>
+        <option value="subtraction">Subtraction (10-99)</option>
+        <option value="multiplication">Multiplication (2-digit x 1-digit)</option>
+        <option value="squares">Squares (1-50)</option>
+        <option value="cubes">Cubes (1-20)</option>
+        <option value="fractions">Fractions to %</option>
+        <option value="percentage">Percentages</option>
+        <option value="approximation">Approximation</option>
+    </select>
+
+    <button id="start-btn">Start Practice</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
